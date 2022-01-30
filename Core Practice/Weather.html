@@ -1,0 +1,193 @@
+<html lang="en-US">
+	<head>
+	<title>One Page Website Template Using HTML, CSS And jQuery (May 2020)</title>
+	</head>
+
+	<body>
+<div id="header_wrapper">
+	<div id='header'>
+		<div id="left_side">
+			<span onclick='show_menu();'>&#x2630;</span>
+		</div>
+		<div id="middle_side">
+			<a href='http://talkerscode.com/index.php'>TalkersCode</a>
+		</div>
+		<div id="right_side">
+			<input type="image" src="http://talkerscode.com/images/search_icon.png" onclick="show_search();" id="search_button">
+		</div>
+	</div><!--end of header-->
+</div><!--end of header_wrapper-->
+
+<div id='header_menu'>
+	<p id="close_menu"><span onclick='hide_menu();'>&#x2716;</span></p>
+	<div id="head_alltopics_div">
+	<h2>All TalkersCode Topics</h2>
+		<ul>
+			<li><a href="http://talkerscode.com/html/html.php"><img src="http://talkerscode.com/images/html_icon.png"><span>HTML Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/css/css.php"><img src="http://talkerscode.com/images/css_icon.png"><span>CSS Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/javascript/javascript.php"><img src="http://talkerscode.com/images/javascript_icon.png"><span>Javascript Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/jquery/jquery.php"><img src="http://talkerscode.com/images/jquery_icon.png"><span>jQuery Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/php/php.php"><img src="http://talkerscode.com/images/php_icon.png"><span>PHP Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/mysql/mysql.php"><img src="http://talkerscode.com/images/mysql_icon.png"><span>MySQL Tutorials</span></a></li>
+			<li><a href="http://talkerscode.com/webtricks.php"><img src="http://talkerscode.com/images/webtricks_icon.png"><span>Webtricks</span></a></li>
+			<li><a href="http://talkerscode.com/reviews.php"><img src="http://talkerscode.com/images/reviews_icon.png"><span>Reviews</span></a></li>
+			<li><a href="http://talkerscode.com/blogging/how-to-start-a-blog.php"><img src="http://talkerscode.com/images/blog_icon.png"><span>How To Start A Blog</span></a></li>
+			<li><a href="http://talkerscode.com/blogging/increase-website-traffic.php"><img src="http://talkerscode.com/images/increase_website_traffic.png"><span>Increase Website Traffic</span></a></li>
+			<li><a href="http://talkerscode.com/blogging/make-money-online.php"><img src="http://talkerscode.com/images/make_money_online.png"><span>Make Money Online</span></a></li>
+			<li><a href="http://talkerscode.com/recommended-things-for-bloggers.php"><img src="http://talkerscode.com/images/recommended_tools_icon.png"><span>Recommended Tools</span></a></li>
+			<li><a href="http://talkerscode.com/best/best-laptop-for-programming.php"><img src="http://talkerscode.com/images/best_laptop_icon.png"><span>Best Laptop For Programming</span></a></li>
+		</ul>
+	</div>
+
+<div class="middle_banner">
+<div class="adsbyvli" data-ad-slot="vi_13703423"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_13703423")})</script>
+</div>
+<h3>Step 1. Make a HTML file and define markup and scripting</h3>
+<p class="explain_para">We make a HTML file and save it with a name <b>website.html</b></p>
+<div class="code_div">
+<pre class='prettyprint'>
+&lt;html&gt;
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="website_style.css"&gt;
+&lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="header"&gt;
+ &lt;li id="site_name"&gt;TalkersCode.com&lt;/li&gt;
+ &lt;li onclick="scrollto('home');"&gt;HOME&lt;/li&gt;
+ &lt;li onclick="scrollto('about');"&gt;ABOUT&lt;/li&gt;
+ &lt;li onclick="scrollto('contact');"&gt;CONTACT&lt;/li&gt;
+&lt;/div&gt;
+
+&lt;div id="home"&gt;
+ &lt;h1&gt;Demo Of One Page Website Template Using HTML, CSS And jQuery&lt;p&gt;TalkersCode.com&lt;/p&gt;&lt;/h1&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="about"&gt;
+ &lt;p&gt;In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.&lt;/p&gt;
+ &lt;p&gt;TalkersCode.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the Xpert in Web Development.&lt;/p&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. &lt;/p&gt;
+ &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="contact"&gt;
+&lt;h1&gt;If you have any question or query you can contact us at &lt;br&gt;talkerscode@gmail.com &lt;br&gt;&lt;br&gt;or you can fill the form below&lt;/h1&gt;
+&lt;input type="text" placeholder="Name"&gt;
+&lt;textarea placeholder="Message"&gt;&lt;/textarea&gt;
+&lt;input type="submit" value="SEND"&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+<div class="middle_banner">
+<div class="adsbyvli" data-ad-slot="vi_13703423"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_13703423")})</script>
+</div>
+<h3>Step 2. Make a CSS file and define styling</h3>
+<p class="explain_para">We make a CSS file and save it with a name <b>website_style.css</b></p>
+<div class="code_div">
+<pre class='prettyprint'>
+body
+{
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#A9D0F5;
+}
+#header
+{
+ width:100%;
+ margin:0px auto;
+ padding:0px;
+ text-align:center;
+ height:70px;
+ line-height:70px;
+}
+#header li
+{
+ display:inline-block;
+ margin-right:25px;
+ font-size:17px;
+ color:#084B8A;
+ font-weight:bold;
+ cursor:pointer;
+}
+#header #site_name
+{
+ text-align:left;
+ width:680px;
+ font-size:35px;
+ margin-left:20px;
+}
+#home,#about,#contact
+{
+ margin-top:100px;
+ width:90%;
+ height:400px;
+ margin-left:5%;
+ padding:50px;
+ box-sizing:border-box;
+ background-color:#084B8A;
+ border-radius:10px;
+ color:white;
+}
+#home h1
+{
+ font-size:40px;
+}
+#home p
+{
+ font-size:20px;
+}
+#about p
+{
+ font-size:20px;
+}
+#contact input[type="text"]
+{
+ width:250px;
+ height:35px;
+ padding-left:10px;
+ float:left;
+ margin-left:80px;
+ border:none;
+}
+#contact textarea
+{
+ float:left;
+ width:250px;
+ height:35px;
+ margin-left:20px;
+ border:none;
+ padding-left:10px;
+ padding-top:10px;
+}
+#contact input[type="submit"]
+{
+ float:left;
+ margin-left:20px;
+ height:35px;
+ width:100px;
+ background:none;
+ color:white;
+ border:1px solid white;
+}
+</pre>
+</div>
+</body>
+</html>

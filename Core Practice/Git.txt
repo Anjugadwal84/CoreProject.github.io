@@ -1,0 +1,30 @@
+Git -  Git is version controler -  Use to control latest Update 
+
+Program 
+Update 1 - Check Prime Number 
+Update 2 - Check between Range 
+Update 3 - Function Prime 
+
+Git Workflow  
+It can be staged - which means the files are updated changes are marked to be commited to the local repository but not yet commited 
+It can be modified - Which means the files with the updated changes are yet stroed in the local repository 
+It can be commited - Which means that the changes you made to your file are safely stored in the local repository 
+git add - used to add a file that is the working directory to the straiged area
+git commit - Used to commit a file that is the staged to the local repository 
+git push - Used to add all commited files to local repository
+git fetch - Used to get files from the remote local repository 
+git merge - Used to get the files from the local repository into the working repository 
+git pull - git fetch + git merge 
+
+
+git config --global user.email "Anjugadwal84@yahoo.com"
+git config --global user.name "Your Name"
+git init   -  Initialized in folder 
+git add . -  
+git commit -m "Comment"
+git push origin master
+
+
+
+ 
+	
