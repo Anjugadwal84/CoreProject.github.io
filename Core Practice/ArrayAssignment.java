@@ -25,10 +25,10 @@ class ArrayAssignment
 	 	// Elements are in Ascending Order 
 
 		int temp;
-		for(int i =0; i<a.length; i++)
+		for(int i =0; i<size; i++)
 		{	
 			
-			for(int j =0; j<a.length-1-i; j++)
+			for(int j =0; j<size-1-i; j++)
 			{
 				if(a[j] > a[j+1])
 				{
@@ -42,7 +42,7 @@ class ArrayAssignment
 				
 		}
 		System.out.println("Elements are in Ascending Order  : ");
-		for(int i=0; i<a.length; i++)
+		for(int i=0; i<size; i++)
 		
 		{
 			
@@ -52,10 +52,10 @@ class ArrayAssignment
 
 		// Elements are in Descending Order 
 		int temp1;
-		for(int i =0; i<a.length; i++)
+		for(int i =0; i<size; i++)
 		{	
 			
-			for(int j =0; j<a.length-1-i; j++)
+			for(int j =0; j<size-1-i; j++)
 			{
 				if(a[j] < a[j+1])
 				{
@@ -69,7 +69,7 @@ class ArrayAssignment
 				
 		}
 		System.out.println("Elements are in Descending Order  : ");
-		for(int i=0; i<a.length; i++)
+		for(int i=0; i<size; i++)
 		
 		{
 			
@@ -80,7 +80,7 @@ class ArrayAssignment
 		int item; 
 		System.out.println("Enter the value of Item : ");
 		item = scan.nextInt();
-		for (int i = 0; i<a.length; i++)
+		for (int i = 0; i<size; i++)
 		{
 			if(a[i]==item)
 			{
@@ -99,13 +99,13 @@ class ArrayAssignment
 		System.out.println("Enter the value of Element : ");
 		element= scan.nextInt();
 
-		for(int i=a.length-1; i>position-1; i--)
+		for(int i=size-1; i>position-1; i--)
 		{
 			a[i]= a[i-1];
 		}
 		a[position-1]=element;
 		System.out.println("Array after insertion of an element  : ");
-		for (int i = 0; i<a.length; i++)
+		for (int i = 0; i<size; i++)
 		{
 			
 			{
