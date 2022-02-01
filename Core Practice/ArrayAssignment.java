@@ -15,7 +15,7 @@ class ArrayAssignment
 			a[i] = scan.nextInt();
 		}
 		System.out.println("Entered elements are : " );
-		for(int i = 0; i<a.length;i++)
+		for(int i = 0; i<size;i++)
 		{
 			
 			System.out.println(a[i]);
@@ -113,7 +113,40 @@ class ArrayAssignment
 			}
 		}	
 
+		// Deletion 
+		int del_elm; 
+		System.out.println("Enter the element which you want to delete  : ");
+		del_elm = scan.nextInt();
 		
-			
+		for(int i=0; i<size;i++)
+		{
+			if(del_elm==a[i])
+			{
+				for(int j =i; j<size-1;j++)
+				{
+					a[j]=a[j+1];
+		
+				}
+				break; 
+			}
+		}
+		System.out.println("Array after deletion of an element  : ");	
+		for(int i =0; i<size-1;i++)
+		{
+			System.out.println(a[i]);
+		}	
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
